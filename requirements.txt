@@ -7,6 +7,7 @@ django-filter==25.1
 django-geoip==0.5.2.1
 django-ip-geolocation==1.6.1
 django-ipware==7.0.1
+django-ratelimit==4.1.0
 django-redis==6.0.0
 djangorestframework==3.16.1
 djangorestframework_simplejwt==5.5.1
@@ -29,4 +30,3 @@ text-unidecode==1.3
 typing_extensions==4.15.0
 tzdata==2025.2
 urllib3==2.6.2
-pip install django-ip-geolocation
