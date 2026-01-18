@@ -14,3 +14,15 @@ class RequestLog(models.Model):
 
     def __str__(self):
         return f"{self.ip_address} - {self.path}"
+
+
+from django.db import models
+
+
+class SuspiciousIP(models.Model):
+    ip_address = models.GenericIPAddressField()
+    reason = models.TextField()
+    flagged_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.ip_address} - {self.reason}"
